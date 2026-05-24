@@ -1,0 +1,50 @@
+name: giphy
+description: "GIF search application powered by the Giphy API."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State management — BLoC.
+  flutter_bloc: ^9.0.0
+  bloc_concurrency: ^0.3.0
+  stream_transform: ^2.1.0
+  equatable: ^2.0.7
+
+  # Networking.
+  dio: ^5.7.0
+
+  # Dependency injection / service locator.
+  get_it: ^8.0.0
+
+  # Connectivity detection.
+  connectivity_plus: ^6.1.0
+
+  # Image loading & caching.
+  cached_network_image: ^3.4.1
+
+  # Masonry grid for variable-aspect-ratio GIFs.
+  flutter_staggered_grid_view: ^0.7.0
+
+  # Open the GIF on giphy.com from the detail screen.
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+  # Testing.
+  bloc_test: ^10.0.0
+  mocktail: ^1.0.4
+
+flutter:
+  uses-material-design: true
